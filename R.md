@@ -28,11 +28,10 @@
 
 Sr. No |	Learning Objective	| Cognitive Level | Action Verb
 :--|:--|:--|:-:
-1.| User will be able to: <br>create periodic square wave | Synthesis(http://vlabs.iitb.ac.in/vlabs-dev/document.php) | Create(http://vlabs.iitb.ac.in/vlabs-dev/document.php)
-2.| User will be able to: <br>understand the concept of Fourier Series | Understand(http://vlabs.iitb.ac.in/vlabs-dev/document.php) | Describe(http://vlabs.iitb.ac.in/vlabs-dev/document.php)
-3.| User will be able to: <br>able to apply the concept of the Fourier Series for various periodic signal generation | Application(http://vlabs.iitb.ac.in/vlabs-dev/document.php) |Apply(http://vlabs.iitb.ac.in/vlabs-dev/document.php)
-4.| User will be able to: <br>analyze the effect of the harmonics on any periodic signal generation | Analysis(http://vlabs.iitb.ac.in/vlabs-dev/document.php) | Analyze(http://vlabs.iitb.ac.in/vlabs-dev/document.php)
-
+1.| User will be able to: <br>create periodic square wave | Synthesis | Create
+2.| User will be able to: <br>understand the concept of Fourier Series | Understand | Describe
+3.| User will be able to: <br>able to apply the concept of the Fourier Series for various periodic signal generation | Application |Apply
+4.| User will be able to: <br>analyze the effect of the harmonics on any periodic signal generation | Analysis | Analyze
 
 <br/>
 <div align="right">
@@ -67,7 +66,7 @@ Read the theory and comprehend the concepts related to the experiment. [LO1, LO2
 
 Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the simulator | Assessment Questions as per LO & Task
 :--|:--|:--|:-:
-1.| LO1 | The students have to create a<br> square wave with the help of <br>harmonic values and <br>appropriate fundamental frequency | What will be the effect on odd harmonics and even harmonics on a generated periodic wave?
+1.| LO1 | The students have to create a square wave with the help of harmonic values and appropriate fundamental frequency | What will be the effect on odd harmonics and even harmonics on a generated periodic wave?<br> A. a.	Distortion of wave <br> B. b.	Affects the periodicity of the wave <br> C. c.	Both a and b <br> <b> D. None of these </b> <br> (mark correct option as bold text)
 2.| LO1 | Users have to identify the effect <br>of even and odd harmonics on <br>the generation of square wave | 1 The generated wave will be an antisymmetric about the origin at t=0, for <br> A. Even Harmonics only <br> B. Odd Harmonics only <br> C. Both Even and Odd harmonics <br> <b> D. Symmetry do not depend on harmonic type </b> <br> (mark correct option as bold text)
 3.| LO2 | User can enter the amplitude values in the simulator, and watch the effect in the output | For odd wave square wave generation with average value of the signal is zero in one time interval, select the correct value of the first harmonic <br> A. 1.2738 <br> B. 2.7345 <br> C. 1.4142 <br> <b> D. 3.1433 </b> <br>
 4.| LO3 | User can watch the effect of integer multiplier harmonics of fundamental harmonics in the output | If the fundamental frequency of the generated periodic wave is 50 Hz, then which will not be frequency used to generate the periodic signal <br> A. 100 Hz <br> B. 150 Hz <br> C. 70Hz <br> <b> D. 200 </b> <br>
@@ -77,7 +76,7 @@ Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the s
 
  <br>
 
- <u> You can add additional TASKS & Assessment Questions <u>
+ 
 <br/>
 <div align="right">
     <b><a href="#top">↥ back to top</a></b>
@@ -94,7 +93,7 @@ Sr.No | What Students will do? |	What Simulator will do?	| Purpose of the task
 :--|:--|:--|:--:
 1.| Student will click on run button.  | Create a periodic square wave signal.  | Design of a square wave
 2.| Students will enter the amplitude values for the integer harmonics 
-to understand the concept of Fourier Series
-  | Show the effect of harmonic values  | Describe the purpose in detail.
+to understand the concept of Fourier Series| Show the effect of harmonic values  | Describe the purpose in detail.
 3.| Student will record the output obtained for the entered values| Provide the relation between a generated periodic signal and conceptual Fourier Series. Simulators provide a graph of the periodic square wave. | To show the effect of different integer harmonic’s amplitude values on generated signal with the help of simulator .Student can relate the effect of harmonics on periodicity.
+
 
