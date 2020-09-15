@@ -92,8 +92,6 @@ Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the s
 Sr.No | What Students will do? |	What Simulator will do?	| Purpose of the task
 :--|:--|:--|:--:
 1.| Student will click on run button.  | Create a periodic square wave signal.  | Design of a square wave
-2.| Students will enter the amplitude values for the integer harmonics 
-to understand the concept of Fourier Series| Show the effect of harmonic values  | Describe the purpose in detail.
+2.| Students will enter the amplitude values for the integer harmonics to understand the concept of Fourier Series| Show the effect of harmonic values | Describe the purpose in detail.
 3.| Student will record the output obtained for the entered values| Provide the relation between a generated periodic signal and conceptual Fourier Series. Simulators provide a graph of the periodic square wave. | To show the effect of different integer harmonic’s amplitude values on generated signal with the help of simulator .Student can relate the effect of harmonics on periodicity.
-
 
