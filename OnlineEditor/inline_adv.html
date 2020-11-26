@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual Lab</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <ul>
+    <li> <div class="dropdown">
+       <button class="dbtn">Inline</button>
+       <div class="dropdown-content">
+         <a href="inline_basic.html">Basic</a>
+         <a href="inline_adv.html">Advance</a>
+         </div>
+     </div> </li>
+   
+    <li> <div class="dropdown">
+       <button class="dbtn">Internal</button>
+       <div class="dropdown-content">
+         <a href="internal_basic.html">Basic</a>
+         <a href="internal_adv.html">Advance</a>
+         </div>
+     </div> </li>
+    <li>
+     <div class="dropdown">
+       <button class="dbtn">External</button>
+       <div class="dropdown-content">
+         <a href="external_basic.html">Basic</a>
+         <a href="external_adv.html">Advance</a>
+         </div>
+     </div> </li>
+   
+   </ul>
+
+<div class="code">
+  <textarea id="htmlCode" style="height: 96%">
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<h2 style="font-family:cursive;color:#063A1C;"><u>Internal Styling</u></h2>
+<table style="border-collapse: collapse;width:100%;background-color: #97ECBB; ">
+  <tr>
+    <th style="border-collapse: collapse;width:100%;">Firstname</th>
+    <th style="border-collapse: collapse;width:100%;">Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td style=" padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">Nandini </td>
+    <td style=" padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;"">Jairath</td>
+    <td style=" padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">20</td>
+  </tr>
+  <tr>
+    <td style=" padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;"">Eve</td>
+    <td style=" padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;"">Jackson</td>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;"">94</td>
+  </tr>
+  <tr>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">Shreya</td>
+    <td style=" padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;"></td>
+    <td style=" padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">80</td>
+  </tr>
+</table>
+<br>
+
+<table id='t01' style=" width: 100%;background-color: #97ECBB;">
+  <tr>
+    <th style=" padding: 15px;text-align: left;font-family:cursive;color: green;">Firstname</th>
+    <th style=" padding: 15px;text-align: left;font-family:cursive;color: green;">Lastname</th> 
+    <th style=" padding: 15px;text-align: left;font-family:cursive;color: green;">Age</th>
+  </tr>
+  <tr>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">John</td>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">Doe</td>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">20</td>
+  </tr>
+  <tr>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">Shuvam</td>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">Gupta</td>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">20</td>
+  </tr>
+  <tr>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">Utsav</td>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">Agarwal</td>
+    <td style="padding: 15px;text-align: left;font-family:cursive;color: #172378border-collapse: collapse;width:100%;">20</td>
+  </tr>
+</table>
+
+</body>
+</html>
+</textarea>
+
+                
+
+<button onclick="showPreview()">Run</button>
+</div>
+<div class="preview">
+  <iframe id="preview-window"></iframe>
+</div>
+
+<script>
+  function showPreview(){
+  var htmlCode = document.getElementById("htmlCode").value;
+  var frame = document.getElementById("preview-window").contentWindow.document;
+  frame.open();
+  frame.write(htmlCode);
+  frame.close();
+}
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual Lab</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <ul>
+    <li> <div class="dropdown">
+       <button class="dbtn">Inline</button>
+       <div class="dropdown-content">
+         <a href="inline_basic.html">Basic</a>
+         <a href="inline_adv.html">Advance</a>
+         </div>
+     </div> </li>
+   
+    <li> <div class="dropdown">
+       <button class="dbtn">Internal</button>
+       <div class="dropdown-content">
+         <a href="internal_basic.html">Basic</a>
+         <a href="internal_adv.html">Advance</a>
+         </div>
+     </div> </li>
+    <li>
+     <div class="dropdown">
+       <button class="dbtn">External</button>
+       <div class="dropdown-content">
+         <a href="external_basic.html">Basic</a>
+         <a href="external_adv.html">Advance</a>
+         </div>
+     </div> </li>
+   </ul>
+
+
+<div class="code">
+  <textarea id="htmlCode">
+<!DOCTYPE html>
+<html>
+<body>
+<h2>College Teams</h2>
+      <p>List Of Teams!!</p>
+      <table>
+        <tr><th>Team Name</th>
+          <th>Location</th>
+          <th>League Type</th></tr>
+        <tr>
+          <td>Afterburn - Air Force</td>
+          <td>Colorado</td>
+          <td>Men's</td>
+        </tr>
+        <tr>
+          <td>Cold Front (Bates College)</td>
+          <td>Maine</td>
+          <td>Women's</td>
+        </tr>
+        <tr>
+          <td>Disco Inferno (Brown University)</td>
+          <td>Rhode Island</td>
+          <td>Women's</td>
+        </tr>
+        <tr>
+          <td>Bad Habit (Catholic University)</td>
+          <td>Washington DC</td>
+          <td>Men's</td>
+        </tr>
+        <tr>
+          <td>Jive Turkeys (Dickinson College)</td>
+          <td>Pennsylvania</td>
+          <td>Both</td>
+        </tr>
+        <tr>
+          <td>Knights of the Round Disc(Longwood College)</td>
+          <td>Virginia</td>
+          <td>Men's</td>
+        </tr>
+        <tr>
+          <td>Ninjas (University of Minnesota)</td>
+          <td>Minnesota</td>
+          <td>Women's</td>
+        </tr>
+        <tr>
+          <td>Flying Squirrels (Hendrix College)</td>
+          <td>Arizona</td>
+          <td>Men's</td>
+        </tr>
+        <tr>
+          <td>Superfly (Yale)</td>
+          <td>Connecticut</td>
+          <td>Men's</td>
+        </tr>
+        <tr>
+          <td>Flywheel (University of Michigan</td>
+          <td>Michigan</td>
+          <td>Women's</td>
+        </tr>
+      </table>
+    
+
+</body>
+</html>
+</textarea>
+
+  <textarea id="cssCode">
+  
+  table{
+  box-sizing: border-box;
+  font-family: Arial,Helvetica;
+  border: 1px solid #bbb;
+  color: #06425C;
+  border: 6px solid white;
+  border-top: border-radius(50px 50px 0 0);
+  margin-left: 35px;
+  width: 83%;
+  
+  padding: 3px;
+  height: auto;
+}
+
+tr:first-child {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  padding-left: 25px;
+
+}
+
+th,td{
+  margin:7px;
+  padding-bottom: 7px;
+  text-align: left;
+  padding: 10px 10px 5px 15px;
+}
+th:nth-child(n+2),td:nth-child(n+2){
+  text-align: center;
+}
+tr:nth-child(n+2){
+  background: #D6EAF8;
+  padding: 5px 5px 5px 5px;
+  opacity: 0.6;
+}
+tr:hover{
+  opacity: 1.0;
+}
+th{
+  color: white;
+}
+  </textarea>             
+
+<button onclick="showPreview()">Run</button>
+</div>
+<div class="preview">
+  <iframe id="preview-window"></iframe>
+</div>
+
+<script>
+  function showPreview(){
+  var htmlCode = document.getElementById("htmlCode").value;
+  var cssCode = "<style>"+document.getElementById("cssCode").value+"</style>"; 
+  var frame = document.getElementById("preview-window").contentWindow.document;
+  frame.open();
+  frame.write(htmlCode+cssCode);
+  frame.close();
+}
+
+</script>
+</body>
+</html>
+
+

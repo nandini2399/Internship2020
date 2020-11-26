@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual Lab</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <ul>
+    <li> <div class="dropdown">
+       <button class="dbtn">Inline</button>
+       <div class="dropdown-content">
+         <a href="inline_basic.html">Basic</a>
+         <a href="inline_adv.html">Advance</a>
+         </div>
+     </div> </li>
+   
+    <li> <div class="dropdown">
+       <button class="dbtn">Internal</button>
+       <div class="dropdown-content">
+         <a href="internal_basic.html">Basic</a>
+         <a href="internal_adv.html">Advance</a>
+         </div>
+     </div> </li>
+    <li>
+     <div class="dropdown">
+       <button class="dbtn">External</button>
+       <div class="dropdown-content">
+         <a href="#">Basic</a>
+         <a href="external_adv.html">Advance</a>
+         </div>
+     </div> </li>
+   
+     
+   </ul>
+
+
+<div class="code">
+  <textarea id="htmlCode">
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+<p class="para">Paragraph</p>
+</body>
+</html>
+
+</textarea>
+
+  <textarea id="cssCode">
+h1 {
+  color:red;
+}
+        
+p {
+  color:blue;
+}
+        
+.para {
+  color: green;
+}
+ 
+  </textarea>                   
+
+<button onclick="showPreview()">Run</button>
+</div>
+<div class="preview">
+  <iframe id="preview-window"></iframe>
+</div>
+
+<script>
+    function showPreview(){
+  var htmlCode = document.getElementById("htmlCode").value;
+  var cssCode = "<style>"+document.getElementById("cssCode").value+"</style>"; 
+  var frame = document.getElementById("preview-window").contentWindow.document;
+  frame.open();
+  frame.write(htmlCode+cssCode);
+  frame.close();
+}
+
+</script>
+</body>
+</html>
+
